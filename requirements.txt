@@ -9,3 +9,4 @@ python-dotenv==0.20.0
 black==22.3.0
 flake8==4.0.1
 isort==5.10.1
+psycopg2==2.9.3
