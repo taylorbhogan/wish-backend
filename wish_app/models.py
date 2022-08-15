@@ -33,3 +33,14 @@ class Gift(models.Model):
 
     def __str__(self):
         return self.name
+
+    def to_dict(self):
+        return {
+            "name": self.name,
+            "description": self.description,
+            "url": self.url,
+            "wished_by": self.wished_by,
+            "claimed_by": self.claimed_by,
+            "date_created": self.date_created,
+            "date_modified": self.date_modified,
+            }

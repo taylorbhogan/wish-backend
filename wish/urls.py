@@ -21,5 +21,5 @@ from .views import ping
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("ping/", ping, name="ping"),
-    path("wishes/", include("wish_app.urls")),
+    path("api/", include("wish_app.urls")),
 ]
