@@ -1,0 +1,42 @@
+[
+  {
+    "model": "wish_app.user",
+    "pk": 1,
+    "fields": {
+      "name": "Taylor",
+      "email": "taylorb.hogan@gmail.com",
+      "hashed_password": "password",
+      "groups": [1]
+    }
+  },
+  {
+    "model": "wish_app.user",
+    "pk": 2,
+    "fields": {
+      "name": "ReAnnen",
+      "email": "rehogan22@gmail.com",
+      "hashed_password": "password",
+      "groups": [1]
+    }
+  },
+  {
+    "model": "wish_app.user",
+    "pk": 3,
+    "fields": {
+      "name": "Amanda",
+      "email": "amandaRoyMarie@gmail.com",
+      "hashed_password": "password",
+      "groups": [1]
+    }
+  },
+  {
+    "model": "wish_app.user",
+    "pk": 4,
+    "fields": {
+      "name": "Pam",
+      "email": "pkhhogan@gmail.com ",
+      "hashed_password": "password",
+      "groups": [1]
+    }
+  }
+]

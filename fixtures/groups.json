@@ -1,0 +1,16 @@
+[
+  {
+    "model": "wish_app.group",
+    "pk": 1,
+    "fields": {
+      "code": "01452"
+    }
+  },
+  {
+    "model": "wish_app.group",
+    "pk": 2,
+    "fields": {
+      "code": "12345"
+    }
+  }
+]

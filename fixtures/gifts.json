@@ -1,0 +1,82 @@
+[
+  {
+    "model": "wish_app.gift",
+    "pk": 1,
+    "fields": {
+      "name": "Cloth napkins",
+      "wished_by": 1,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 2,
+    "fields": {
+      "name": "Rechargeable hand warmers",
+      "wished_by": 1,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 3,
+    "fields": {
+      "name": "Lems shoes",
+      "wished_by": 1,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 4,
+    "fields": {
+      "name": "Book: Anything You Want by Derek Sivers",
+      "wished_by": 1,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 5,
+    "fields": {
+      "name": "Bottle tree",
+      "wished_by": 4,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 6,
+    "fields": {
+      "name": "Cold brew supplies",
+      "wished_by": 2,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 7,
+    "fields": {
+      "name": "Cat",
+      "wished_by": 2,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  },
+  {
+    "model": "wish_app.gift",
+    "pk": 8,
+    "fields": {
+      "name": "Stainless steel pans",
+      "wished_by": 2,
+      "date_created": "2022-08-10 09:26:03.478039",
+      "date_modified": "2022-08-10 09:26:03.478039"
+    }
+  }
+]
