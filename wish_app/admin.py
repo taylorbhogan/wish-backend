@@ -1,3 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Group, User, Gift
+
+admin.site.register([Group, User, Gift])
