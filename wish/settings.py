@@ -30,12 +30,13 @@ SECRET_KEY = os.environ.get("SECRET_KEY", default="foo")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "wish-backend.herokuapp.com"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "wish-backend.herokuapp.com", "[::1]"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    "wish_app.apps.WishAppConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -85,7 +86,8 @@ DATABASES = {
         "NAME": os.environ.get("NAME"),
         "USER": os.environ.get("USER"),
         "PASSWORD": os.environ.get("PASSWORD"),
-        "HOST": "127.0.0.1",
+        # "HOST": "127.0.0.1",
+        "HOST": "db",
         "PORT": "5432",
     }
 }

@@ -1,0 +1,39 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+    # hostPath:containerPath
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - '5432:5432'
+    hostname: db
+  web:
+    # where to look for Dockerfile:
+    build: .
+    # command: no need to override the Dockerfile start command
+    volumes:
+    # refs the dir we created in the Dockerfile
+      - .:/code
+    ports:
+      # - "8000:8000"
+      - "8007:8765"
+    environment:
+      - POSTGRES_NAME=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - PORT=8765
+      - DEBUG=1
+    links:
+      - db
+    depends_on:
+      - db
+
+
+# docker run -d --name wish -e "PORT=8765" -e "DEBUG=1" -p 8007:8765 web:latest
