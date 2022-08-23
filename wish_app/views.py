@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 from .models import User, Group, Gift
 
@@ -9,7 +9,7 @@ def find_wishlists(request):
     userGroups = User.objects.get(id=1).groups.all()
     users = User.objects.filter(groups__in=userGroups)
     if users:
-        return HttpResponse([user.name_and_id() for user in users])
+        return JsonResponse([user.name_and_id() for user in users])
     else:
         return HttpResponse("No users found yet")
 
