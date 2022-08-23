@@ -8,9 +8,8 @@ def index(request):
 def find_wishlists(request):
     userGroups = User.objects.get(id=1).groups.all()
     users = User.objects.filter(groups__in=userGroups)
-    print("users-------------->",users)
     if users:
-        return HttpResponse(users)
+        return HttpResponse([user.name_and_id() for user in users])
     else:
         return HttpResponse("No users found yet")
 

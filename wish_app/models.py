@@ -16,6 +16,12 @@ class User(models.Model):
     def __str__(self):
         return self.name
 
+    def name_and_id(self):
+        return {
+            "id": self.id,
+            "name": self.name
+        }
+
     def to_dict(self):
         return {
             "name": self.name,
