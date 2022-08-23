@@ -6,9 +6,9 @@ def index(request):
     return HttpResponse("Hello, world.")
 
 def find_wishlists(request):
-    print("request-------------->",request)
     userGroups = User.objects.get(id=1).groups.all()
     users = User.objects.filter(groups__in=userGroups)
+    print("users-------------->",users)
     if users:
         return HttpResponse(users)
     else:
