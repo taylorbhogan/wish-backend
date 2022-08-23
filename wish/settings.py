@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1", "wish-backend.herokuapp.com", "[::1]"
 # Application definition
 
 INSTALLED_APPS = [
+    "corsheaders",
     "wish_app.apps.WishAppConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -49,12 +50,15 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = "wish.urls"
 
